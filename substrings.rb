@@ -8,7 +8,7 @@ def substrings(sentence, dictionary)#Takes a string and an array of words and cr
 end
 
 def includeCount(string, search_string) #like ruby's native include? function, but it gives a count of how many times it is included.
-    return 0 if search_string == ''
+    return 0 if search_string == '' || string == ''
     string_array = string.chars
     search_string_array = search_string.chars
     sum = 0
